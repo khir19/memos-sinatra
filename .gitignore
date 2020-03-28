@@ -1,0 +1,4 @@
+*.rbc
+/.bundle/
+/vendor/bundle
+.byebug_history
