@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
-require "./memos"
+require "./memos_config"
 
 class Memo
-  attr_accessor :id, :title, :content
-
   class << self
     def create(title:, content:)
       id = MemoIOUtils.next_id
@@ -28,7 +26,7 @@ class Memo
     @content = content
   end
 
-  attr_reader :id, :title, :content
+  attr_accessor :id, :title, :content
 
   def save
     MemoIOUtils.write(self)

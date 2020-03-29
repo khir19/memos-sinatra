@@ -27,7 +27,7 @@ class MemosTest < TestBase
     get "/"
 
     assert last_response.redirect?
-    assert_match /\/memos$/, last_response.location
+    assert_match %r{/memos$}, last_response.location
   end
 
   def test_memos_page_has_page_title
