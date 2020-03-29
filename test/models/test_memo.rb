@@ -3,7 +3,7 @@
 require "./test/base"
 require "./models"
 
-class MemosTest < TestBase
+class MemoTest < TestBase
   TEST_MEMO_TITLE_FSTRING = "title %d"
   TEST_MEMO_CONTENT_FSTRING = "This is a sample memo.\nThe id of this memo is %d."
   NUM_SAMPLE_MEMOS = 5

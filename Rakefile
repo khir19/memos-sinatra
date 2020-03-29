@@ -9,5 +9,5 @@ task default: "test"
 Rake::TestTask.new("test") do |t|
   t.warning = true
   t.verbose = true
-  t.test_files = FileList["test/test_*.rb"]
+  t.test_files = FileList["test/**/test_*.rb"]
 end
