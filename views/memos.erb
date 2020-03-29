@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>メモ一覧</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="id_application_name">メモアプリ</h1>
+
+    <a id="id_button_new_memo" href="/memos/new">メモを追加</a>
+  </header>
+
+  <main>
+    <ul id="id_list_memos">
+      <% memos.each do |memo| %>
+      <li><%= memo.title %></li>
+      <% end %>
+    </ul>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

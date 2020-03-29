@@ -9,7 +9,7 @@ end
 
 get "/memos" do
   memos = Memo.all
-  memos.map(&:title).join("\n")
+  erb :memos, locals: { memos: memos }
 end
 
 module MemosConfig
