@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title><%= title %></title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header>
+    <h1 id="id_application_name">メモアプリ</h1>
+
+    <% if show_new_memo_button %>
+    <a id="id_button_new_memo" href="/memos/new">メモを追加</a>
+    <% end %>
+  </header>
+
+  <main>
+    <%= yield %>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

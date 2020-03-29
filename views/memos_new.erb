@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-  <title>新しいメモの作成</title>
-</head>
-
-<body>
-  <header>
-    <h1 id="id_application_name">メモアプリ</h1>
-  </header>
-
-  <main>
-    <form id="id_form_new_memo" action="/memos" method="POST">
-      <input id="id_input_new_memo_title" name="new_memo_title" type=text
-        placeholder="新しいメモのタイトル" value="">
-      <textarea id="id_input_new_memo_content" name="new_memo_content"
-        placeholder="新しいメモの内容"></textarea>
-      <button id="id_button_submit_new_memo" type="submit">送信</button>
-    </form>
-  </main>
-
-  <footer>
-
-  </footer>
-</body>
-
-</html>
+<form id="id_form_new_memo" action="/memos" method="POST">
+  <input id="id_input_new_memo_title" name="new_memo_title" type=text
+    placeholder="新しいメモのタイトル" value="">
+  <textarea id="id_input_new_memo_content" name="new_memo_content"
+    placeholder="新しいメモの内容"></textarea>
+  <button id="id_button_submit_new_memo" type="submit">送信</button>
+</form>
